@@ -11,7 +11,6 @@ class Shoe
   def brands= (brand)
     @brand = brand
     BRANDS << brand
-
   end
 
   def cobble
