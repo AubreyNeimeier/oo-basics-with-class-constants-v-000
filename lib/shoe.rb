@@ -8,17 +8,7 @@ class Shoe
     @brand = brand
   end
 
-  def BRANDS(brand)
-    BRANDS << @brand
-  end
-
-  def brand= (brand)
-    @brand = brand
-    BRANDS << brand
-    BRANDS.each do |brand|
-      BRANDS.delete_if {|brand| @brand == brand}
-    end
-  end
+  
 
   def cobble
     self.condition = "new"
