@@ -12,8 +12,8 @@ class Shoe
     @brand = brand
     BRANDS << brand
     BRANDS.each do |brand|
-      if !@brand == brand || BRANDS.count == 0
-        BRANDS << brand
+      BRANDS.delete_if @brand == brand 
+        
       end
     end
   end
