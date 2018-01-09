@@ -8,6 +8,10 @@ class Shoe
     @brand = brand
   end
 
+  def BRANDS(brand)
+    BRANDS << @brand
+  end
+
   def brand= (brand)
     @brand = brand
     BRANDS << brand
